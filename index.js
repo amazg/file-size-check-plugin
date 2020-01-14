@@ -9,7 +9,7 @@ class FileSizeCheck {
               for (var filename in compilation.assets) {
                   if (compilation.assets[filename].size() > this.fileSizeLimit) {
                       if (!(filename.indexOf('.map') > -1) && filename.indexOf('.gz') > -1) {
-                          console.error(`\n Error in this file :${filename} -- ${(compilation.assets[filename].size() / 1024).toFixed(1)}KB \n Gzip file size is limited at ${this.fileSizeLimit / 1024}KB.`);
+                          console.error("\x1b[41m", `\n Error in this file :${filename} -- ${(compilation.assets[filename].size() / 1024).toFixed(1)}KB \n Gzip file size is limited at ${this.fileSizeLimit / 1024}KB.`);
                           return false
                       }
                   }
