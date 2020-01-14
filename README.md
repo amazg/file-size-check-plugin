@@ -12,13 +12,13 @@ $ npm install --save-dev file-size-check-plugin
 ## Example:
 
 ``` javascript
-var FileSizeCheckPlugin = require('file-size-check-plugin');
+var FileSizeCheck = require('file-size-check-plugin');
 webpackConfig = {
   plugins: [
     new CompressionWebpackPlugin({
         test: /\.(js|css)(\?.*)?$/i
     }),
-    new CheckFileSizeLimit({ fileSizeLimit: 500 * 1024 })
+    new FileSizeCheck({ fileSizeLimit: 500 * 1024 })
   ]
 };
 ```
