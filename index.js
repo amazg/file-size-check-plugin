@@ -1,6 +1,6 @@
 class FileSizeCheck {
   constructor(Option) {
-      this.fileSizeLimit = Option.fileSizeLimit || 500 * 1024
+      this.fileSizeLimit = Option.fileSizeLimit || 300 * 1024
   }
   apply(compiler) {
       compiler.hooks.emit.tapPromise('FileSizeCheck', compilation => {
