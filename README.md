@@ -12,7 +12,7 @@ $ npm install --save-dev file-size-check-plugin
 
 ## Example:
 
-⚠️ Need to use [compression-webpack-plugin](https://github.com/webpack-contrib/compression-webpack-plugin),Because file-size-check-plugin check the file end with .gz 
+⚠️ Need to use [compression-webpack-plugin](https://github.com/webpack-contrib/compression-webpack-plugin), Because file-size-check-plugin check the file end with .gz 
 
 ``` javascript
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
