@@ -1,6 +1,6 @@
 {
   "name": "file-size-check-plugin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Webpack plugin that check the file size after build.",
   "main": "index.js",
   "scripts": {
