@@ -1,6 +1,6 @@
 # file-size-check-plugin
 
-A Webpack plugin to check file size after build by webpack.
+A Webpack plugin to check file size after build by webpack and gzip compress.
 
 ## Installation:
 
@@ -11,10 +11,12 @@ $ npm install --save-dev file-size-check-plugin
 
 ## Example:
 
-⚠️ Need to use CompressionWebpackPlugin
+⚠️ Need to use [compression-webpack-plugin](https://github.com/webpack-contrib/compression-webpack-plugin)
 
 ``` javascript
-var FileSizeCheck = require('file-size-check-plugin');
+const CompressionWebpackPlugin = require('compression-webpack-plugin');
+const FileSizeCheck = require('file-size-check-plugin');
+
 webpackConfig = {
   plugins: [
     new CompressionWebpackPlugin({
