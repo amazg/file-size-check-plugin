@@ -1,4 +1,5 @@
 # file-size-check-plugin
+![npm](https://img.shields.io/npm/dw/file-size-check-plugin?label=npm%20install)
 
 A Webpack plugin to check file size after build by webpack and gzip compress.
 
