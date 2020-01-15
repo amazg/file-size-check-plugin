@@ -14,6 +14,8 @@ $ npm install --save-dev file-size-check-plugin
 
 ⚠️ Need to use [compression-webpack-plugin](https://github.com/webpack-contrib/compression-webpack-plugin), Because file-size-check-plugin check the file end with .gz 
 
+⚠️ If you don't set the 'fileSizeLimit' params, it will be set at 500 * 1024 by default.
+
 ``` javascript
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const FileSizeCheck = require('file-size-check-plugin');
