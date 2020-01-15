@@ -7,7 +7,7 @@ A Webpack plugin to check file (js|css) size after build by webpack and gzip com
 
 Using npm:
 ```shell
-$ npm install --save-dev file-size-check-plugin
+$ npm install compression-webpack-plugin file-size-check-plugin --save-dev 
 ```
 
 ## Example:
