@@ -23,9 +23,11 @@ const FileSizeCheck = require('file-size-check-plugin');
 webpackConfig = {
   plugins: [
     new CompressionWebpackPlugin({
-        test: /\.(js|css)(\?.*)?$/i
+      test: /\.(js|css)(\?.*)?$/i
     }),
-    new FileSizeCheck({ fileSizeLimit: 300 * 1024 })
+    new FileSizeCheck({ 
+      fileSizeLimit: 300 * 1024
+    })
   ]
 };
 ```
